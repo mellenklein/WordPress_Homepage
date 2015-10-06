@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -8,16 +12,138 @@ main {
   margin: 8px;
 }
 
-.masthead {
+.header {
   height: 48px;
   background-color: #1E8CBE;
 }
 
-.masthead h1 {
-  margin: 0;
-}
-
-.create-box {
+.hero {
   background-color: #344051;
   height: 1110px;
+  overflow: hidden;
+
+}
+
+.hero h1,
+.hero p {
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  display: inline-block;
+  font-size: 2em;
+  padding: 0 12px;
+  text-align: center;
+  margin: 35% 5% 0;
+  font-weight: 500;
+}
+
+.hero p {
+  margin: 7% 18%;
+}
+
+.button {
+  background-color: #1E8CBE;
+  margin: 0 25%;
+  color: #fff;
+  border: 10px solid #202833;
+  height: 72px;
+  width: 227px;
+  display: inline-block;
+}
+
+.arrow {
+  background-color: #fff;
+  height: 20px;
+  width: 30px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  margin-top: 212px;
+  display: block;
+}
+
+.icon-box {
+  margin: 30% auto 10px;
+}
+
+.hero-icon {
+  background-color: #fff;
+  height: 67px;
+  width: 300px;
+  margin: 30px auto;
+}
+
+.blue-section {
+  background-color: #E6EEF3;
+  height: 190px;
+}
+
+.grey-section {
+  background-color: #D1D3D7;
+  height: 1578px;
+  overflow: hidden;
+  padding-top: 2px;
+  margin-bottom: 0;
+}
+
+.grey-inner {
+  background-color: #fff;
+  height: 215px;
+  margin: 30px 10px;
+}
+
+.grey-inner:nth-child(3),
+.grey-inner:nth-child(4),
+.grey-inner:nth-child(6) {
+    height: 240px;
+}
+
+.blue-action {
+  background-color: #E6EEF3;
+  height: 170px;
+}
+
+.b2 {
+  border: none;
+  height: 53px;
+  width: 207px;
+  margin-top: 100px;
+  margin-left: 27%;
+}
+
+.footer {
+  background-color: #000;
+  height: 132px;
+}
+
+.footer-nav {
+  list-style: none;
+  color: #fff;
+  font-size: .68em;
+  text-align: center;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  padding: 30px 10px 9px 10px;
+  margin: 0 auto;
+  word-spacing: 5px;
+}
+
+.footer-nav li:nth-child(8),
+.footer-nav li:nth-child(9),
+.footer-nav li:nth-child(10) {
+  padding-top: 10px;
+}
+
+.footer-img {
+  background-color: #fff;
+  width: 133px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
