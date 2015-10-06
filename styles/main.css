@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 100%;
+  width: 457px;
+  margin: 8px;
+}
+
+.masthead {
+  height: 48px;
+  background-color: #1E8CBE;
+}
+
+.masthead h1 {
+  margin: 0;
+}
+
+.create-box {
+  background-color: #344051;
+  height: 1110px;
+}
