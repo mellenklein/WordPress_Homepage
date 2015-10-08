@@ -10,32 +10,28 @@ body {
 
 header.main {
   background: #118BC0;
-  height: 48px;
 }
 
 header.main section {
   overflow: auto;
 }
 
-header.main section div,
+header.main img,
 header.main section h4,
 header.main section h3 {
   margin: 7px;
   padding: 0;
-  height: 35px;
   float: left;
   color: #fff;
 }
 
-header.main section div {
+header.main img {
   width: 35px;
-  background-color: #fff;
   margin-left: 16px;
 }
 
 header.main section h3 {
   width: 120px;
-  height: 35px;
   text-align: center;
   padding-top: 8px;
   font-size: 1.70em;
@@ -59,8 +55,9 @@ header.main section h4 {
 }
 
 .hero {
-  padding: 165px 30px 75px;
-  background: #344051;
+  padding: 165px 30px 55px;
+  background: #344051 url("https://goo.gl/dLmczR") no-repeat no-repeat;
+  background-size: cover;
 }
 
 .hero h1,
@@ -105,7 +102,7 @@ header.main section h4 {
   display: block;
 }
 
-.hero .features li div.icon,
+.hero .features li img,
 .hero .features li section.caption {
   background: #5F6C7D;
   height: 65px;
@@ -113,12 +110,12 @@ header.main section h4 {
   margin: 0 20px;
 }
 
-.hero .features li div.icon {
+.hero .features li img {
   height: 58px;
   width: 50px;
   margin: 0;
   float: left;
-  background: #fff;
+  background: none;
 }
 
 .hero .features li section.caption {
@@ -179,9 +176,11 @@ header.main section h4 {
 
 .main.features article .icon {
   width: 62px;
-  height: 62px;
+  height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 100px;
+  padding: 15px;
 }
 
 .main.features article .feature-name {
@@ -222,7 +221,7 @@ header.main section h4 {
 
 footer.main {
   background: #000;
-  padding: 30px 10px;
+  padding: 30px 10px 20px;
 }
 
 /* Nav */
@@ -240,15 +239,16 @@ nav.legal a {
 }
 
 nav.legal {
-  margin: 17px 0;
+  margin: 17px 0 20px;
 }
 
 footer.main h4 {
   height: 25px;
   width: 132px;
-  background: #000;
   margin: 0 auto;
   text-indent: -99999px;
+  background: #000 url("https://goo.gl/QmxQDJ") no-repeat no-repeat;
+  background-size: contain;
 }
 
 /* Buttons */
@@ -271,16 +271,22 @@ footer.main h4 {
 }
 
 .createSite.highlight {
-  border: 10px solid #212934;
+  /*border: 10px solid #000;*/
+  border: 10px solid rgba(0,0,0,.4);
+  background-clip: padding-box;
 }
 
 .arrow {
   margin: 212px auto 0 auto;
   display: block;
-  width: 50px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   border: none;
-  background: #fff;
+  background: none;
+  font-size: 5em;
+  font-weight: 500;
+  color: #fff;
+  transform: rotate(180deg);
 }
 
 .action button {
